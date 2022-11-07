@@ -65,14 +65,14 @@ As stated, our first model had all numeric features but did not have any of the 
 ### First Model vs. Final Model
 This model performed "better" than our first model, contained more useful information, and did not suffer from the same issues with multicollinearity that our first model did. We log transformed all remaining continuous variables in our final model prior to making any predictions. The final model is the sole model that is capable of making predictions on our dataset. 
 <br><br>
-### Conclusion
-Our final model took on a significantly different form. The categories chosen were: sqft_lot_log, sqft_lot15_log, bedrooms, bathrooms, waterfront_NO, waterfront_YES, view_AVERAGE, view_EXCELLENT, view_FAIR, view_GOOD, grade_10 Very Good, grade_11 Excellent, grade_12 Luxury, grade_13 Mansion. Our predictive model was built on the back of our final set of data giving us an R-squared score of 0.548. A house, regardless of features was worth $104,608. Per bedroom an additional: ~$30,487, bathroom: ~$124,595, and waterfront property averaging an additional ~$540,106. For grade of house the only columns we could use were: 10 Very Good: ~$399,961, 11 Excellent: ~$708,925, 12 Luxury: ~$1,253,902, 13 Mansion: ~$2,652,976. For homes with a view, graded Fair: ~$28,120, Good: ~$37,460, Average ~$33,250, and Excellent: ~$50,340. Per square foot of lot an additional ~$13,310. For each square foot on average of your 15 closest neighbors there was a negative,- ~$17,688. <br><br>
+
 ## Business Suggestions
 Taking a look at the graphs below, we can make some business suggestions to our client as well: there appears to be little return on investment for more than 5 bedrooms, and very little apparent return on investment for properties that have more than 3.5 bathrooms. Taking into account how much a waterfront property goes for, consider building on some kind of waterfront as well for an additional ~$540,106 in price.   
 
-<div>
-    <img src ="data/Screenshot 2022-11-03 172004.png" width = "700" align = "center"/>
-</div>
-<div>
-    <img src ="data/Screenshot 2022-11-03 172133.png" width = "700" align = "center"/>
-</div>
+![Screenshot 2022-11-03 172004](https://user-images.githubusercontent.com/108380875/200337247-adda62a1-2587-4551-8a93-e0631a821a43.png)
+![Screenshot 2022-11-03 172133](https://user-images.githubusercontent.com/108380875/200337261-c3d895b7-0aaa-46b5-9233-8902762e1dbd.png)
+
+<br><br>
+### Conclusion
+Our final model took on a significantly different form. The categories chosen were: sqft_lot_log, sqft_lot15_log, bedrooms, bathrooms, waterfront_NO, waterfront_YES, view_AVERAGE, view_EXCELLENT, view_FAIR, view_GOOD, grade_10 Very Good, grade_11 Excellent, grade_12 Luxury, grade_13 Mansion. Our predictive model was built on the back of our final set of data giving us an R-squared score of 0.548. A house, regardless of features was worth $104,608. Per bedroom an additional: ~$30,487, bathroom: ~$124,595, and waterfront property averaging an additional ~$540,106. For grade of house the only columns we could use were: 10 Very Good: ~$399,961, 11 Excellent: ~$708,925, 12 Luxury: ~$1,253,902, 13 Mansion: ~$2,652,976. For homes with a view, graded Fair: ~$28,120, Good: ~$37,460, Average ~$33,250, and Excellent: ~$50,340. Per square foot of lot an additional ~$13,310. For each square foot on average of your 15 closest neighbors there was a negative,- ~$17,688.
+
